@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f5f5;
+}
+
+.facebook {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+.facebook .left-side {
+  padding: 10px;
+  height: 100vh;
+  overflow: auto;
+}
+.facebook .left-side::-webkit-scrollbar {
+  width: 6px;
+}
+.facebook .left-side::-webkit-scrollbar-track {
+  background: #6bc6ff;
+}
+.facebook .left-side::-webkit-scrollbar-thumb {
+  background: #4176e9;
+  border-radius: 5px;
+}
+.facebook .left-side::-webkit-scrollbar-thumb:hover {
+  background: #0151ff;
+}
+.facebook .left-side .user-title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 5px;
+}
+.facebook .left-side .user-title .user-img {
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.facebook .left-side .user-title span {
+  font-size: 0.9rem;
+}
+.facebook .left-side .user-sections {
+  margin: 10px 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.facebook .left-side .user-sections.hide-height {
+  height: calc(100vh - 120px) !important;
+}
+.facebook .left-side .user-sections ul {
+  display: flex;
+  flex-direction: column;
+}
+.facebook .left-side .user-sections ul li a {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 2px 5px;
+  gap: 5px;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 6px;
+}
+.facebook .left-side .user-sections ul li a:hover {
+  background-color: #fff;
+}
+.facebook .left-side .user-sections ul li a .img-icon {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 50%;
+}
+.facebook .left-side .user-sections ul li a span {
+  font-size: 0.9rem;
+}
+.facebook .left-side .see-more {
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  gap: 10px;
+  background-color: transparent;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 6px;
+}
+.facebook .left-side .see-more:hover {
+  background-color: #fff;
+}
+.facebook .left-side .see-more .btn-icon {
+  background-color: #e9e9e9;
+  font-size: 1.4rem;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.facebook .left-side .see-more span {
+  font-size: 0.9rem;
+}
+.facebook .content,
+.facebook .right {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.facebook .right {
+  background-color: antiquewhite;
+}/*# sourceMappingURL=style.css.map */
